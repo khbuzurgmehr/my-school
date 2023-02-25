@@ -8,28 +8,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>My School</title>
 </head>
 <body>
-    <section class="header">
+    <!--Home Section-->
+    <section class="header" id="home">
         <nav>
             <a href=""><img src="./img/logo.png" width="200px" alt="logo"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onClick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">COURSE</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#subject">SUBJECTS</a></li> 
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onClick="showMenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>My favourite school in Poland</h1>
+            <h1>My Favorite School In Poland</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus illo soluta earum odit accusantium beatae.</p>
             <a href="https://github.com/khbuzurgmehr" class="hero-btn">Visit Us to know more</a>
         </div>
-        <!--Changes removed-->
     </section>
+
+    <!--Course Section-->
+    <section class="subject" id="subject">
+        <h1>Subjects We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus reiciendis beatae iure.</p>
+        <div class="row">
+            <div class="subject-col">
+                <h3>Math</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellendus sed alias corrupti cupiditate rem corporis optio modi molestiae magnam voluptatibus tenetur quod esse impedit consequuntur dolore illo non vitae, autem error eaque nam ratione eos? Similique debitis vel possimus.</p>
+            </div>
+            <div class="subject-col">
+                <h3>Literature</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellendus sed alias corrupti cupiditate rem corporis optio modi molestiae magnam voluptatibus tenetur quod esse impedit consequuntur dolore illo non vitae, autem error eaque nam ratione eos? Similique debitis vel possimus.</p>
+            </div>
+            <div class="subject-col">
+                <h3>History</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellendus sed alias corrupti cupiditate rem corporis optio modi molestiae magnam voluptatibus tenetur quod esse impedit consequuntur dolore illo non vitae, autem error eaque nam ratione eos? Similique debitis vel possimus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--script for toggle menu-->
+    <script>
+        let navLinks = document.getElementById('navLinks');
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
