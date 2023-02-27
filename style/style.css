@@ -103,13 +103,13 @@ nav .fa {
 
 
 
-/*course section*/
+/*subject section*/
 
 .subject {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 180px;
 }
 
 h1 {
@@ -151,6 +151,29 @@ h3 {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+/*our students*/ 
+
+.our-students {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.our-students-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.our-students-col img {
+    width: 100%;
+}
+
+
+
 /*making website responsive */
 
 /*navbar */
@@ -188,4 +211,5 @@ h3 {
     }
 }
 
-/*subjects*/
+
+
